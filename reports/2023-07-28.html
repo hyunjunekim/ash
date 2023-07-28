@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports for Desktop folks
+## 2023-07-28
+### wm: Speculative fix for desk animation crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/b6bb134
+
+### Prevent crash when removing a team drive to not be in the list of loaders.
+* Affected: components/drive/chromeos
+* https://chromium.googlesource.com/chromium/src/+/82e47566
+
+`);
+              </script>
+            </body>
+        </html>
