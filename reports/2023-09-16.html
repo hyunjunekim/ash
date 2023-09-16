@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2023-09-16
+### cros: Add crash keys for overview window drag bug
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/656e7a23
+
+### Fix crash in accelerator aliasing due to mismatch between flags
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/340c37f
+
+### Revert "GCC: prevent usage of raw_ptr ->* operator to workaround GCC compiler crash"
+* Affected: gpu
+* https://chromium.googlesource.com/chromium/src/+/5ab1dca
+
+`);
+              </script>
+            </body>
+        </html>
