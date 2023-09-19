@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2023-09-19
+### Fix crash caused by closing grouped ARC notifications
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/e09129f
+
+### Remove drcrash@ from chromeos/ash/components/attestation/OWNERS
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/953b7eef
+
+`);
+              </script>
+            </body>
+        </html>
