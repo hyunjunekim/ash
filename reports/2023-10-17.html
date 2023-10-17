@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2023-10-17
+### Fix Private CRD session crash when privacy hub is disabled
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/83b9356
+
+### Speculative fix for shutdown crash
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/30f5113
+
+`);
+              </script>
+            </body>
+        </html>
