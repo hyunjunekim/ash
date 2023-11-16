@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2023-11-16
+### overview: Fix crash with windows being minimized while in overview
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/a0210291
+
+### Fix a qs slider crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/e7a0e40
+
+`);
+              </script>
+            </body>
+        </html>
