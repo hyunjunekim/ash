@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2023-12-14
+### Protect against crashes in NotificationListView
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/49fb0b7
+
+### snap-groups: Fix crash in \`EndSplitView()\` after snap animation
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/a5d9e93
+
+### Only crash GPU process if the faulty shader was cached.
+* Affected: gpu
+* https://chromium.googlesource.com/chromium/src/+/00dc98c
+
+`);
+              </script>
+            </body>
+        </html>
