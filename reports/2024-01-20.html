@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-01-20
+### gif_recording: Fix a crash with the recording type menu bounds
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/5606020
+
+### cros: Speculative fix for OverviewWindowDragController crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/4db45f3
+
+`);
+              </script>
+            </body>
+        </html>
