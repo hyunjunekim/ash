@@ -1,0 +1,36 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-02-17
+### wm: Fix crash on keyboard bounds change
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/6b4e005
+
+### [//gpu][Graphite] Intentionally crash on failure to initialize Dawn
+* Affected: gpu
+* https://chromium.googlesource.com/chromium/src/+/71ef2daa
+
+### Fix renderer crash on opening FileSettings du to oracle mismatch
+* Affected: chrome/browser/chromeos
+* https://chromium.googlesource.com/chromium/src/+/1c364500
+
+### Revert "kiosk: Crash kiosk session if unable to close browser window"
+* Affected: chrome/browser/chromeos
+* https://chromium.googlesource.com/chromium/src/+/94e21c1
+
+### kiosk: Crash kiosk session if unable to close browser window
+* Affected: chrome/browser/chromeos
+* https://chromium.googlesource.com/chromium/src/+/753b156
+
+`);
+              </script>
+            </body>
+        </html>
