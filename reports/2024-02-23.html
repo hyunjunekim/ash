@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-02-23
+### splitview: Fix crash when dragging divider
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/9ecf9a63
+
+### float: Fix crash when using always on top window
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/ae9bc1d
+
+### Overview gesture: fix a crash that is caused by exiting overview...
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/5288250
+
+### overview: Fix crash with clicking desk preview right before shutdown
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/07237368
+
+`);
+              </script>
+            </body>
+        </html>
