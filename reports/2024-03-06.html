@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-03-06
+### Add UMA for ANR/Crash dialogs
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/186d51d1
+
+### splitview: Add crash keys
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/c1357402
+
+### Revert "Limit ui.ChromeCrashEarly.strict_lacros to official builds only"
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/06356c8a
+
+### Revert "Disable ui.ChromeCrashNotLoggedIn.browser_crashpad"
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/a932902
+
+`);
+              </script>
+            </body>
+        </html>
