@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-03-08
+### Fix crash on marking a task item as complete when device is offline
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/64be01c
+
+### [Telemetry] Fix crash when no active browser issue
+* Affected: chrome/browser/chromeos
+* https://chromium.googlesource.com/chromium/src/+/9d001ba
+
+`);
+              </script>
+            </body>
+        </html>
