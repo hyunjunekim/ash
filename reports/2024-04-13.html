@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-04-13
+### snap-groups: Fix divider position clamp crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/d8c8ba8
+
+### bento_button: Fix a crash when calculating preferred size of desk button
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/bb570a7
+
+### [QuickStart] Prevent crash in case no elapsed timer is set
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/8add8bf
+
+`);
+              </script>
+            </body>
+        </html>
