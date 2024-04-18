@@ -1,0 +1,32 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-04-18
+### gd: Fix the crash related to Tab focus
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/bb99bbbf
+
+### camera: Reconnect to CameraAppDeviceBridge when VCS process crashes
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/b181c42
+
+### Disable ui.ChromeCrashEarly.strict_lacros for Lacros non-official
+* Affected: chromeos
+* https://chromium.googlesource.com/chromium/src/+/c1332d8
+
+### [Telemetry] Fix crashes when routine detail is null
+* Affected: chrome/browser/chromeos
+* https://chromium.googlesource.com/chromium/src/+/9072c4e
+
+`);
+              </script>
+            </body>
+        </html>
