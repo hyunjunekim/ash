@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-04-20
+### ash: fix crash during shutdown in tablet mode
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/4b549b2
+
+### Fix crash when AshNotificationView is destroyed while animating
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/5f999f79
+
+`);
+              </script>
+            </body>
+        </html>
