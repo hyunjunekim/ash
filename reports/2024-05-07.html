@@ -1,0 +1,28 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-05-07
+### overview: Fix faster splitview item focus crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/a7331d6
+
+### pe: Fix crash when dragging divider to edge and tap
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/a96e5c3
+
+### Fix canvas_display_after_device_lost.https.html crash on win
+* Affected: gpu
+* https://chromium.googlesource.com/chromium/src/+/928a087
+
+`);
+              </script>
+            </body>
+        </html>
