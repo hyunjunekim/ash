@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-05-16
+### [image search] Fix crash when typing characters with control menu open
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/fac4891f
+
+### back_gesture: Add crash keys for back gesture affordance
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/8fd6f2f
+
+`);
+              </script>
+            </body>
+        </html>
