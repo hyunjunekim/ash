@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-05-21
+### [AIS] Fix crash when launching Play Store through App Install Service
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/0d65139d
+
+### D3DImageBacking: fix a crash when device is lost
+* Affected: gpu
+* https://chromium.googlesource.com/chromium/src/+/0718693
+
+`);
+              </script>
+            </body>
+        </html>
