@@ -1,0 +1,20 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-06-18
+### snap-group: Fix snap-to-replace with always-on-top window crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/76c5461
+
+`);
+              </script>
+            </body>
+        </html>
