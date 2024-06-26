@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-06-26
+### cros: Fix dangling ptr crash in notification callback
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/fc8b105
+
+### snap-group: Fix toplevel window event handler drag crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/0cbe8b96
+
+`);
+              </script>
+            </body>
+        </html>
