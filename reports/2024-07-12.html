@@ -1,0 +1,24 @@
+<!doctype html>
+        <html>
+        <head>
+          <meta charset="utf-8"/>
+            <title>Marked in the browser</title>
+            </head>
+            <body>
+              <div id="content"></div>
+              <script src="https://cdn.jsdelivr.net/npm/marked@3.0.8/marked.min.js"></script>
+              <script>
+                 document.getElementById("content").innerHTML = marked.parse(`# Daily reports
+## 2024-07-12
+### snap-groups: Fix DumpWithoutCrashing on minimize
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/64383d0
+
+### splitview: Fix \`SplitViewOverviewSession::OnWindowBoundsChanged()\` crash
+* Affected: ash
+* https://chromium.googlesource.com/chromium/src/+/bcd9feb
+
+`);
+              </script>
+            </body>
+        </html>
